@@ -5,6 +5,7 @@ import PromotionQuote from './components/PromotionQuote'
 import ReactMarquee from './components/ReactMarquee'
 import ReactCaro from './components/ReactCaro'
 import Card from './components/Card'
+import AccordianChoice from './components/AccordianChoice'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
 <Card />
 <ReactMarquee dir={"left"} />
 <ReactMarquee dir={"right"} />
+<AccordianChoice />
 </div>
 </>
   )

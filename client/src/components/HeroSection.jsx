@@ -3,10 +3,11 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import imag from '../assets/sunday.png'
 import bg001 from '../assets/bg-001.jpg'
 const HeroSection = () => {
-  const words = [' Suad', ' A Graphic Designer']
+  const words = [' Suad', ' A Graphics Designer']
   const [text] = useTypewriter({
     words: words,
-    loop: 0
+    loop: 0,
+    typeSpeed: 250
   })
   return (
     <>

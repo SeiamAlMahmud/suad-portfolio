@@ -9,7 +9,7 @@ const CardItems = ({ img,quote }) => {
                 <img src={img} alt="" className='rounded-full bg-cover w-auto h-40 mb-4' />
             </div>
             <div className='p-4'>
-                <h3 className='px-42 text-lg'>
+                <h3 className='px-42 text-sm md:text-lg'>
                 <span>
                     <img src={img1} className='h-5 w-auto' alt="" />
                      </span>
