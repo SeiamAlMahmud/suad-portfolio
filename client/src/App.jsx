@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import HeroSection from './components/HeroSection'
+import PromotionQuote from './components/PromotionQuote'
+import ReactMarquee from './components/ReactMarquee'
+import ReactCaro from './components/ReactCaro'
+import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +13,11 @@ function App() {
 <>
 <div className='h-screen'>
   <HeroSection/>
- 
+  <ReactCaro />
+ <PromotionQuote/>
+<Card />
+<ReactMarquee dir={"left"} />
+<ReactMarquee dir={"right"} />
 </div>
 </>
   )
