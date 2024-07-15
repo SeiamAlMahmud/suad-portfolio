@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom/dist'
 import AnchorTemporaryDrawer from './AnchorTemporaryDrawer';
+import SpeedDial from './SpeedDial';
 const Navbar = () => {
     
     const [scrollingDown, setScrollingDown] = useState(true);
@@ -43,7 +44,6 @@ return () => window.removeEventListener('scroll', handleScroll);
                     <AnchorTemporaryDrawer></AnchorTemporaryDrawer>
                 </div>
             </div>
-           
         </>
     )
 }

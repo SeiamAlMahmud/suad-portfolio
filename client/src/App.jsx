@@ -6,6 +6,7 @@ import ReactMarquee from './components/ReactMarquee'
 import ReactCaro from './components/ReactCaro'
 import Card from './components/Card'
 import AccordianChoice from './components/AccordianChoice'
+import SpeedDial from './components/SpeedDial'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
   return (
 <>
 <div className='h-screen'>
+  <SpeedDial />
   <HeroSection/>
   <ReactCaro />
  <PromotionQuote/>
