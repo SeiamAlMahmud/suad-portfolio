@@ -3,7 +3,7 @@ import promotion from '../assets/hero-img.svg'
 const PromotionQuote = () => {
   return (
     <>
-    <div className="h-auto ">
+    <div className="h-auto mx-auto w-4/6">
        <div className='flex-col justify-center items-center flex py-10 md:flex-row md:gap-20'>
         
             <img src={promotion} className='h-72 w-72 md:h-96 md:w-96 ' />
