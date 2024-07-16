@@ -8,9 +8,8 @@ const ContactFeed = () => {
         <div className='w-full bg-pink-100 py-12'>
             <div className='flex flex-col justify-evenly items-center lg:flex-row lg:items-center'>
 
-             <div className=' h-auto w-[30rem] lg:w-[40rem] px-4'>
                <Lottie animationData={lottieAnimation} loop={true} />
-            </div>
+            
             <div className='flex flex-col gap-4'>
              <h1 className='capitalize text-6xl line-clamp-4 text-center font-sans font-semibold mx-5'>Do you  
              <span className='text-pink-700'> Interest </span>

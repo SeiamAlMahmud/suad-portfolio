@@ -57,7 +57,7 @@ body {
 .card::after {
   content: '';
   position: absolute;
-  background: rgb(52, 88, 88);
+  background: rgb(81, 144, 144);
   inset: 5px;
   border-radius: 15px;
 }

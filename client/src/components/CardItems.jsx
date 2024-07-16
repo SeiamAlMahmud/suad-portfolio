@@ -4,10 +4,9 @@ import img2 from '../assets/close.png'
 const CardItems = ({ img,quote,feedbackName }) => {
     return (
         <div className='border py-10 border-pink-100  h-auto w-full flex justify-center items-center flex-col  card'>
-            <div className='z-20'>
-
-                <img src={img} alt="" className='rounded-full bg-cover w-auto h-40 mb-4' />
-            </div>
+          
+                <img src={img} alt="" className='rounded-full bg-cover w-auto h-40 mb-4 z-20' />
+            
             <div className='p-5 z-20'>
                 <h3 className='px-42 text-sm md:text-lg'>
                 <span>

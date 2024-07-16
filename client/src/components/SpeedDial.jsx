@@ -10,7 +10,7 @@ const SpeedDial = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-[75%] lg:top-[75%] right-4 flex flex-col items-end z-50">
+    <div className="fixed top-[75%]  right-4 flex flex-col items-end z-50">
       <div className="relative">
         <button
           onClick={() => setIsOpen(!isOpen)}
