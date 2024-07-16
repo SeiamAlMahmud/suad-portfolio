@@ -263,3 +263,47 @@ body {
     transform: translateX(-100%) translateY(0);
   }
 }
+
+.btn {
+  position: relative;
+  /* Ensure proper positioning for ::after */
+  overflow: hidden;
+}
+.btn:hover{
+  transform: scale(1.1);
+  transition: 0.3s ;
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  width: 16rem;
+  /* 64 units in Tailwind (4 x 16) */
+  height: 8rem;
+  /* 32 units in Tailwind (2 x 16) */
+  background-color: transparent;
+  /* Initial color */
+  position: absolute;
+  bottom: -4rem;
+  right: 4rem;
+  /* Positioned outside the button initially */
+  z-index: 10;
+  /* Behind the text but above other content */
+  transition: all 0.3s ease;
+  /* Smooth transition on hover */
+}
+
+.btn:hover::after {
+  background-color: #3A82F3;
+  /* Color on hover */
+  top: 0;
+  /* Moves up to be within the button */
+  right: 0;
+  /* Moves in to be within the button */
+}
+
+.btn span {
+  position: relative;
+  z-index: 20;
+  /* Ensures text is above the ::after element */
+}
