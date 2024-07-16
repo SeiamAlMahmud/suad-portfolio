@@ -10,10 +10,10 @@ const SpeedDial = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-[40%] lg:top-[65%] right-4 flex flex-col items-end z-50">
+    <div className="fixed top-[75%] lg:top-[75%] right-4 flex flex-col items-end z-50">
       <div className="relative">
         <button
-          onMouseEnter={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
           className="p-3 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 focus:outline-none"
         >
           {/* Main button icon (e.g., a phone icon) */}
