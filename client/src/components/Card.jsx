@@ -9,13 +9,13 @@ const Card = () => {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 1,
-          slidesToSlide: 1 // optional, default to 1.
+          items: 2,
+          slidesToSlide: 2 // optional, default to 1.
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 1,
-          slidesToSlide: 1 // optional, default to 1.
+          items: 2,
+          slidesToSlide: 2 // optional, default to 1.
         },
         mobile: {
           breakpoint: { max: 640, min: 0 },
@@ -39,8 +39,8 @@ const Card = () => {
               <br>
               </br>About Us?
         </h1>
-<div className='mx-auto'>
-<Carousel responsive={responsive}
+<div className='mx-auto flex justify-evenly overflow-x-auto gap-5 cardflow px-5'>
+{/* <Carousel responsive={responsive}
 swipeable={false}
 draggable={false}
 showDots={true}
@@ -49,7 +49,10 @@ autoPlay={true}
 autoPlaySpeed={9000}
 customTransition="all 1s"
 transitionDuration={500}
->
+> */}
+    <div className='flex justify-center items-center px-2 '>
+    <CardItems img={img1} quote={feedback1} feedbackName={feedbackName1} />
+    </div>
     <div className='flex justify-center items-center px-2 '>
     <CardItems img={img1} quote={feedback1} feedbackName={feedbackName1} />
     </div>
@@ -57,7 +60,7 @@ transitionDuration={500}
     <CardItems img={img2} quote={feedback2} feedbackName={feedbackName2} />
     </div>
    
-</Carousel>
+{/* </Carousel> */}
 </div>
 
 

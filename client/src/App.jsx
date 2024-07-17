@@ -8,6 +8,7 @@ import Card from './components/Card'
 import AccordianChoice from './components/AccordianChoice'
 import SpeedDial from './components/SpeedDial'
 import ContactFeed from './components/ContactFeed'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
 <ReactMarquee dir={"right"} />
 <AccordianChoice />
 <ContactFeed />
+<Footer />
 </div>
 </>
   )

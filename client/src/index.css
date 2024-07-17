@@ -12,7 +12,7 @@ body {
   height: 550px;
   padding: 2rem 2rem;
   margin: 4rem 0;
-  color: aliceblue;
+  color: rgb(1, 3, 6);
   background: #b5c2d2;
   position: relative;
   display: flex;
@@ -21,11 +21,18 @@ body {
   overflow: hidden;
   border-radius: 20px;
 }
-
+.cardflow {
+  overflow: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
 .card:hover {
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
 
+}
+.card:hover.card::after {
+  background-color: blanchedalmond;
 }
 
 .card h2 {
@@ -57,7 +64,7 @@ body {
 .card::after {
   content: '';
   position: absolute;
-  background: rgb(81, 144, 144);
+  background: rgb(249, 248, 248);
   inset: 5px;
   border-radius: 15px;
 }

@@ -16,8 +16,8 @@ const ContactFeed = () => {
               to work with me?</h1>
               <div className=" mx-auto mb-10">
 
-              <button onClick={()=> navigate('/contact')} class="btn border-[#3A82F3] border-2 px-4 py-2 rounded-md uppercase hover:shadow-blue-500 hover:shadow-lg cursor-pointer">
-        <span class="text-black font-bold">Get Started</span>
+              <button onClick={()=> navigate('/contact')} className="btn border-[#3A82F3] border-2 px-4 py-2 rounded-md uppercase hover:shadow-blue-500 hover:shadow-lg cursor-pointer">
+        <span className="text-black font-bold">Get Started</span>
     </button>
               </div>
             </div>

@@ -33,8 +33,10 @@ return () => window.removeEventListener('scroll', handleScroll);
     // console.log(lastScrollY,scrollingDown)
     return (
         <>
-            <div className=" flex w-full items-center justify-between px-2 py-0 bg-black border-b-2 border-r-blue-300 ">   
+            <div className=" flex w-full items-center justify-between px-2 py-0 bg-black border-b-2 border-r-blue-300 ">
+                <Link to={"/"}>
                 <img src={img} alt="" className='h-20' />   
+                </Link>
                 <ul className=' gap-3 py-4 text-md hidden  sm:flex sm:gap-7 text-xl md:text-2xl font-semibold text-white'>
                     <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/"}>About me</Link></li>
                     <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/"}>Contact us</Link></li>
