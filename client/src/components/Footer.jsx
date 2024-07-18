@@ -6,7 +6,7 @@ import nagad from "../assets/Nagad-Logo.wine.png"
 const Footer = () => {
   return (
     <>
-    <div className='bg-black justify-evenly items-center grid grid-cols-1 sm:grid-cols-2 text-white w-full gap-20 px-10'>
+    <div className='bg-black justify-evenly items-center grid grid-cols-1 sm:grid-cols-2 text-white w-full gap-20 px-10 '>
 
       <div className='gap-10'>
         <img src={img1} className='h-auto w-36 ' />

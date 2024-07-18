@@ -38,9 +38,9 @@ return () => window.removeEventListener('scroll', handleScroll);
                 <img src={img} alt="" className='h-20' />   
                 </Link>
                 <ul className=' gap-3 py-4 text-md hidden  sm:flex sm:gap-7 text-xl md:text-2xl font-semibold text-white'>
-                    <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/"}>About me</Link></li>
-                    <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/"}>Contact us</Link></li>
-                    <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/"}> About me</Link></li>
+                    <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/about"}>About me</Link></li>
+                    <li className='px-2 py-1  hover:bg-teal-200 duration-150 ease-in rounded-2xl hover:text-black'><Link to={"/contact"}>Contact us</Link></li>
+                   
                 </ul>
                 <div className='sm:hidden'>
                     <AnchorTemporaryDrawer></AnchorTemporaryDrawer>
