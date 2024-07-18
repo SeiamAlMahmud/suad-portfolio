@@ -314,3 +314,7 @@ body {
   z-index: 20;
   /* Ensures text is above the ::after element */
 }
+.parrentImg{
+  position: relative;
+}
+

@@ -29,6 +29,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
+      <p className='bg-gray-500 w-full text-center text-white py-3 font-thin text-xl capitalize'>All rights are reserved @ 2024</p>
     </>
   )
 }
