@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Footer from './Footer'
-
+import toast, { Toaster } from 'react-hot-toast';
 const Contact = () => {
   const [allow, setAllow] = useState(false)
   const [val, setVal] = useState("Send")
@@ -26,16 +26,26 @@ const Contact = () => {
       })
       .then(
         (res) => {
-          console.log(res)
+          // console.log(res)
+          if (res) {
+            toast.success('Successfully Send Your Message')
+          }
           console.log('SUCCESS!');
         },
         (error) => {
+          if (error) {
+            toast.error("This didn't work.")
+          }
           console.log('FAILED...', error.text);
         },
       );
   };
   // console.log(import.meta.env.VITE_YOUR_PUBLIC_KEY)
   return (
+      <>
+      <Toaster
+        position="top-right"
+        reverseOrder={false} />
     <div className='flex justify-center items-center bg-red-100  flex-col '>
 
       <form ref={form} onSubmit={sendEmail}>
@@ -54,6 +64,7 @@ const Contact = () => {
       </form>
       <Footer />
     </div>
+      </>
   )
 }
 
