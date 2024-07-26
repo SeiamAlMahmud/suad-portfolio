@@ -4,6 +4,7 @@ import img1 from "../assets/gr png.png"
 import bkash from "../assets/BKash-bKash-Logo.wine.png"
 import nagad from "../assets/Nagad-Logo.wine.png"
 const Footer = () => {
+  const currentDate = new Date().getFullYear()
   return (
     <>
     <div className='bg-black justify-evenly items-center grid grid-cols-1 sm:grid-cols-2 text-white w-full gap-20 px-10 '>
@@ -29,7 +30,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-      <p className='bg-gray-500 w-full text-center text-white py-3 font-thin text-xl capitalize'>All rights are reserved @ 2024</p>
+      <p className='bg-gray-500 w-full text-center text-white py-3 font-thin text-xl capitalize'> &copy; {currentDate} Suad Hasan. All rights reserved.</p>
     </>
   )
 }
